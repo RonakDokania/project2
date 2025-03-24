@@ -28,7 +28,7 @@
     <script type="text/javascript">
         let names=[];
         let nameList=document.getElementById("nameList");
-        function.addName(){
+        function addName(){
             let input = document.getElementById("nameInput");
             let name = input.value.trim();
             if(name){
@@ -39,7 +39,7 @@
                 input.value="";
             }
         }
-        function.removeName(){
+        function removeName(){
             if(names.length > 0){
                 names.pop();
                 nameList.removeChild(nameList.lastChild);
